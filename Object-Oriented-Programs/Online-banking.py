@@ -18,13 +18,16 @@ class Customer:
             self.balance = self.balance - amount
             print("After withdraw, balance is:", self.balance)
 
+    def getBalance(self):
+        print(self.balance)
+
 print("Welcome to:-",Customer.bank_name)
 
 name = input("Enter your name:")
 c= Customer(name)
 
 while True:
-    print("D:Deposit\n W:Withdraw \n E: Exit")
+    print("\n D:Deposit\n W:Withdraw \n Balance: \n E: Exit")
     option = input("Choose your options:-")
 
     if option.lower() == 'd':
