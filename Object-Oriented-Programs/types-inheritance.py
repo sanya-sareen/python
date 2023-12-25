@@ -37,6 +37,24 @@ d.d1()
 
 
 '''
+multiple inheritance
+'''
+class Y1:
+    def m1(self):
+        print("m1")
+
+class Y2:
+    def m1(self):
+        print("m1")
+
+class Y3(Y1, Y2):
+    def m2(self):
+        print("m2")
+
+y = Y3()
+y.m2()
+y.m1()   #m1 of class Y1 would be called.
+'''
 hierarical inheritance-
 parent 1, multiple child
 '''
