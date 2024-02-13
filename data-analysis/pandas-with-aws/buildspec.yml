@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - python random-data.py
+      - aws s3 cp sample_data.xlsx s3://upload-data-files-to-s3/
